@@ -27,11 +27,23 @@ time, mark, audio, video {
 html {
 	background-color: #0B152CFF;
 	color: white;
+	font-family: Mukta Vaani;
 }
 
+.title{
+	font-size: 2.4em;
+	font-weight: bold;
+}
 
 /*Container*/
 .coinContainer{
 	position: relative;
-	background-image: linear-gradient(to right top, #3c1f5a, #2f336a, #214475, #19537c, #22617f);
+	background: rgb(61,28,90);
+	background: -webkit-linear-gradient(328deg, rgba(61,28,90,1) 0%, rgba(56,41,96,1) 13%, rgba(0,50,56,1) 37%, rgba(0,42,77,1) 59%, rgba(38,86,121,1) 86%, rgba(34,97,127,1) 100%);
+	background: -o-linear-gradient(328deg, rgba(61,28,90,1) 0%, rgba(56,41,96,1) 13%, rgba(0,50,56,1) 37%, rgba(0,42,77,1) 59%, rgba(38,86,121,1) 86%, rgba(34,97,127,1) 100%);
+	background: linear-gradient(58deg, rgba(61,28,90,1) 0%, rgba(56,41,96,1) 13%, rgba(0,50,56,1) 37%, rgba(0,42,77,1) 59%, rgba(38,86,121,1) 86%, rgba(34,97,127,1) 100%);
+	border-radius: 15px;
+	margin: 0 auto;
+	padding: 0 1.6em 1.6em 1.6em;
+	width: 85vw;
 }
