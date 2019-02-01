@@ -1,4 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* CSS Reset 
+	 http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -22,7 +23,15 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
+/* Global */
 html {
 	background-color: #0B152CFF;
+	color: white;
+}
+
+
+/*Container*/
+.coinContainer{
+	position: relative;
+	background-image: linear-gradient(to right top, #3c1f5a, #2f336a, #214475, #19537c, #22617f);
 }
