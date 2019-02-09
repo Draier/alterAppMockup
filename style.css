@@ -28,14 +28,44 @@ html {
 	background-color: #0B152CFF;
 	color: white;
 	font-family: Mukta Vaani;
+	font-size: 17px;
 }
 
 .title{
 	font-size: 2.4em;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 /*Container*/
+.mainContainer{
+	width: 80vw;
+	margin: 0 auto;
+}
+.balance{
+	background-color: rgba(255, 255, 255, 0.2);
+	color:white;
+	font-size: 12px;
+	letter-spacing: 2px;
+	padding: 3px 9px 3px 9px;
+	border-radius: 10px;
+	font-weight: 700;
+}
+.crypto{
+	font-size: 4.8em;
+}
+.money{
+	opacity: 0.5;
+	font-size: 18px;
+}
+.buttonContainer{
+	margin: 5vh 0 5vh 0;
+	width: 100%;
+	display: inline-block;
+}
+
+.buttonContainer>.receive{
+	float: right;
+}
 .coinContainer{
 	position: relative;
 	background: rgb(61,28,90);
@@ -44,6 +74,112 @@ html {
 	background: linear-gradient(58deg, rgba(61,28,90,1) 0%, rgba(56,41,96,1) 13%, rgba(0,50,56,1) 37%, rgba(0,42,77,1) 59%, rgba(38,86,121,1) 86%, rgba(34,97,127,1) 100%);
 	border-radius: 15px;
 	margin: 0 auto;
+	text-align: center;
 	padding: 0 1.6em 1.6em 1.6em;
-	width: 85vw;
+}
+
+.iconContainer{
+	position: absolute;
+	top: 0;
+	right: 47%;
+	transform: translateY(-50%);
+}
+.iconFodder{
+	padding: 2.8vh;
+}
+/*Buttons and Icons*/
+.send {
+	background-color: #282555FF;
+}
+.send-color {
+	color: #423575FF;
+}
+.number-send{
+	color: #9867E0FF;
+}
+.align{
+	display: flex;
+	align-items: center;;
+	justify-content: center;
+}
+.receive {
+	background-color: #1B3758FF;
+}
+.left{
+	text-align: left;
+}
+.right{
+	text-align: right;
+}
+.receive-color{
+	color: #275174FF;
+}
+.number-receive{
+	color: #5DC1F0FF;
+}
+.color-receive{
+	color: #63CDFAFF;
+}
+.fa-bitcoin{
+	color: #white;
+	margin: 0 auto;
+}
+.below{
+	color: #1E2E56FF;
+}
+.orange{
+	color: #F7931AFF;
+}
+.button{
+	color: white;
+	width: 25vw;
+	padding: 20px;
+	border-radius: 20px;
+	border-color: transparent;
+	margin: 0 auto;
+	font-weight: bold;
+	cursor: pointer;
+}
+/*Transaction Containers*/
+.transactionContainer{
+	background-color: #0F1B3CFF;
+	border-radius: 20px;
+	padding: 0 2vh 0 2vh;
+	font-weight: bolder;
+}
+.transaction{
+	box-shadow: 0px 24px 0px -22px rgba(46,74,117,0.55);
+	display: grid;
+	grid-template-rows: [first-line-start] 50% [first-line-end] 50% [second-line-end];
+	grid-template-columns: [icon-start] 6% [icon-end] 47% [data-1-end] 47% [data-2-end];
+	padding: 4vh;
+}
+
+.transactionIcon{
+	grid-row-start: first-line-start;
+	grid-row-end: second-line-end;
+	height: 100%;
+}
+.transactionTitle{
+	color: #1E2E56FF;
+	letter-spacing: 3px;
+}
+.center{
+	text-align: center;
+}
+#last{
+	box-shadow: none;
+}
+/* Responsive */
+
+@media(max-width: 720px){
+	html{
+		font-size: 12px;
+	}
+	.iconContainer{
+		right: 42%;
+	}
+	.crypto{
+		font-size: 4em;
+	}
 }

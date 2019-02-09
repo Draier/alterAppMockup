@@ -3,7 +3,8 @@
 	<meta charset="UTF-8">
 	<title>alterApp</title>
 	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Mukta+Vaani" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Mukta+Vaani:400,700,800" rel="stylesheet">
 </head>
 <body>
 	<div>
@@ -12,58 +13,127 @@
 		<a href="#" class="profilePicture"></a>
 	</div>
 	<h1 class="title">My wallet</h1>
-	<div>
+	<div class="mainContainer">
 		<div class="coinContainer">
-			<img src="#" alt="Bitcoin Icon">
+			<div class="iconFodder">	
+				<span class="iconContainer fa-layers fa-fw fa-3x">
+				  <i class="fas fa-square orange"></i>
+				  <i class="fab fa-btc" data-fa-transform="shrink-6 rotate-15"></i>
+				</span>
+			</div>
+			<div class="delete">
+				<i class="far fa-trash-alt"></i>
+			</div>
 			<div>
-				<p class="balance">BTC BALANCE</p>
-				<p>$6,559.00</p>
+				<p>
+					<span class="balance">BTC BALANCE</p>
+				</p>
+				<p class="crypto">1.2565845</p>
+				<p class="money">$6,559.00</p>
 			</div>
-			<a href="#"><img src="*" alt="arrow"></a>
 		</div>
-		<a class="sendButton button"><img src="" alt="icon">Send</a>
-		<a class="receiveButton button"><img src="" alt="icon">Receive</a>
-		<h4>TRANSACTIONS</h4>
-		<div class="transactionContainer">
-			
+
+		<div class="buttonContainer">
+				
+				<button class="send button">
+					<span class="align"><span class="fa-layers fa-fw fa-2x">
+						<i class="fas fa-square send-color"></i>
+						<i class="fas fa-upload number-send" data-fa-transform="shrink-8"></i>
+					</span>Send</button>
+				<button class="receive button">
+					<span class="align"><span class="fa-layers fa-fw fa-2x">
+						<i class="fas fa-square receive-color"></i>
+						<i class="fas fa-download number-receive" data-fa-transform="shrink-8"></i>
+					</span>
+						<span>Receive</span></span>
+					
+					</button>
 		
-			<div class="transaction transaction">
-				<span class="transactionIcon"><img src="" alt=""></span>
-				<div>
-					<span>Received</span><span>+ 2.514421</span>
+		</div>	
+
+		<h4 class="transactionTitle center">TRANSACTIONS</h4>
+
+		<div class="transactionContainer">
+
+			<div class="transaction">
+
+				<div class="fa-layers fa-fw fa-2x transactionIcon">
+						<i class="fas fa-square receive-color"></i>
+						<i class="fas fa-download number-receive" data-fa-transform="shrink-8"></i>
 				</div>
-				<div>
-					<span>3uih87...q8173</span><span>13 Nov 2018</span>
+
+				<div class="transactionDataLeft">
+					<p class="left">Received</p>
+					<p class="left below">3uih87...q8173</p>
 				</div>
+
+				<div class="transactionDataRight">
+					<p class="right color-receive">+ 2.514421</p>
+					<p class="right below">13 Nov 2018</p>
+				</div>
+
 			</div>
-			<div class="transaction sent">
-				<span class="transactionIcon"><img src="" alt=""></span>
-				<div>
-					<span>Sent</span><span>- 2.514421</span>
+
+			<div class="transaction">
+
+				<div class="fa-layers fa-fw fa-2x transactionIcon">
+						<i class="fas fa-square send-color"></i>
+						<i class="fas fa-upload number-send" data-fa-transform="shrink-8"></i>
 				</div>
-				<div>
-					<span>3uih87...q8173</span><span>8 Nov 2018</span>
+
+				<div class="transactionDataLeft">
+					<p class="left">Sent</p>
+					<p class="left below">3uih87...q8173</p>
 				</div>
+
+				<div class="transactionDataRight">
+					<p class="right send-color">- 2.514421</p>
+					<p class="right below">8 Nov 2018</p>
+				</div>
+
 			</div>
-			<div class="transaction received">
-				<span class="transactionIcon"><img src="" alt=""></span>
-				<div>
-					<span>Received</span><span>+ 1.514421</span>
+
+			<div class="transaction">
+
+				<div class="fa-layers fa-fw fa-2x transactionIcon">
+						<i class="fas fa-square receive-color"></i>
+						<i class="fas fa-download number-receive" data-fa-transform="shrink-8"></i>
 				</div>
-				<div>
-					<span>3uih87...q8173</span><span>5 Nov 2018</span>
+
+				<div class="transactionDataLeft">
+					<p class="left">Received</p>
+					<p class="left below">3uih87...q8173</p>
 				</div>
+
+				<div class="transactionDataRight">
+					<p class="right color-receive">+ 1.514421</p>
+					<p class="right below">5 Nov 2018</p>
+				</div>
+
 			</div>
-			<div class="transaction sent">
-				<span class="transactionIcon"><img src="" alt=""></span>
-				<div>
-					<span>Sent</span><span>- 0.514421</span>
+
+			<div class="transaction" id="last">
+
+				<div class="fa-layers fa-fw fa-2x transactionIcon">
+						<i class="fas fa-square send-color"></i>
+
+						<i class="fas fa-upload number-send" data-fa-transform="shrink-8"></i>
 				</div>
-				<div>
-					<span>3uih87...q8173</span><span>1 Nov 2018</span>
+
+				<div class="transactionDataLeft">
+					<p class="left">Sent</p><p class="left below">3uih87...q8173</p>
 				</div>
+
+				<div class="transactionDataRight">
+					<p class="right send-color">- 0.514421</p><p class="right below">1 Nov 2018</p>
+				</div>
+
 			</div>
 		</div>
 	</div>
+	<footer class="center">
+		Web Implementation of <a href="https://dribbble.com/shots/5936590-AlterApp-MyWallet">this</a> design by <a href="https://www.github.com/Draier">Draier</a>.
+	</footer>
 </body>
+<script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script> 
 </html>
