@@ -147,6 +147,9 @@ html {
 	padding: 0 2vh 0 2vh;
 	font-weight: bolder;
 }
+.bolder{
+	font-weight: bolder;
+}
 .transaction{
 	box-shadow: 0px 24px 0px -22px rgba(46,74,117,0.55);
 	display: grid;
@@ -161,11 +164,21 @@ html {
 	height: 100%;
 }
 .transactionTitle{
-	color: #1E2E56FF;
+	color: #1E2A47FF;
+	font-weight: bolder;
 	letter-spacing: 3px;
+	padding: 20px;
 }
 .center{
 	text-align: center;
+}
+.delete{
+	opacity: 0.7;
+	position: absolute;
+	font-size: 28px;
+	top: 10%;
+	right: 2%;
+	cursor: pointer;
 }
 #last{
 	box-shadow: none;
