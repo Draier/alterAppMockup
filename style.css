@@ -30,13 +30,38 @@ html {
 	font-family: Mukta Vaani;
 	font-size: 17px;
 }
-
+.a:link{
+	color: inherit;
+}
+.a:visited{
+	color: inherit;
+}
 .title{
 	font-size: 2.4em;
 	font-weight: 700;
 }
 
 /*Container*/
+.iconRow{
+	display: grid;
+	width: 100%;
+	grid-template-columns: 10% 70% 20%;
+	padding: 2vh;
+	font-size: 24px;
+}
+.back{
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+.rightIcons{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	display: flex;
+	justify-content: space-around;
+}
+.settings,.notif,.profilePicture{
+	color: white;
+}
 .mainContainer{
 	width: 80vw;
 	margin: 0 auto;
@@ -172,6 +197,7 @@ html {
 .center{
 	text-align: center;
 }
+
 .delete{
 	opacity: 0.7;
 	position: absolute;
@@ -192,7 +218,33 @@ html {
 	.iconContainer{
 		right: 42%;
 	}
+	.coinContainer{
+		margin-top: 8vh;
+	}
 	.crypto{
 		font-size: 4em;
+	}
+	.mainContainer{
+		width: 90vw;
+	}
+	.delete{
+		right: 7%;
+		font-size: 24px;
+	}
+	.button{
+		width: 40vw;
+	}
+	.transaction{
+		padding: 3vh;
+		grid-template-columns: [icon-start] 15% [icon-end] 42.5% [data-1-end] 42.5% [data-2-end];
+		font-size: 14px;
+	}
+	.iconRow{
+		display: grid;
+		width: 95vw;
+		grid-template-columns: 10% 40% 50%;
+		padding: 3vh;
+		font-size: 24px;
+		margin: 2vh 0 2vh 0;
 	}
 }
